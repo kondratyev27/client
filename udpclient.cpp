@@ -23,6 +23,8 @@ bool UdpClient::makeConnect(){
         if( connect( sockD, (sockaddr*)&addr, sizeof(addr)) == -1 ){
             cout << "Error connecting socket! \n";
             isError = 1;
+        }else{
+            cout << "Connecting succes! \n";
         }
     }
     return !isError;
